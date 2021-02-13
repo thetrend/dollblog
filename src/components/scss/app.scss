@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+@import 'settings';
+
+body {
+  background-image: url('./img/frenzy.png'), url('./img/background.jpeg');
+  background-repeat: no-repeat, repeat;
+  background-position: top right;
+  background-size: 100%, 60%;
+  padding: 6%;
+  @media screen and (min-width: 64em) {
+    background-size: 70%, 20%;
+    padding: 2.5%;
+  }
+}
+
+h1 {
+  font-weight: 300;
+  padding-top: 8%;
+  padding-bottom: 16%;
+  text-align: center;
+  @media screen and (min-width: 64em) {
+    padding-top: 0%;
+    padding-bottom: 2%;
+    text-align: left;
+  }
+}
+
+#intro {
+  background-color: #fed38e3b;
+  padding: 3%;
+  margin-bottom: 6%;
+  h6 { text-align: right; }
+  @media screen and (min-width: 64em) {
+    padding: 1.5%;
+    h6 {
+      text-align: left;
+    }
+  }
+}
+
+.pinktest {
+  background: #ffc4fc6b;
+}
+
+.goldtest {
+  background: #fed38e3b;
+}
