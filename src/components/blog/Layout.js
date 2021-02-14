@@ -31,22 +31,22 @@ const Layout = () => {
             </ul>
             <p>Github link to this project: <a href="https://github.com/thetrend/dollblog">https://github.com/thetrend/dollblog</a></p>
             <p>Hello! If you found me through Lambda School, I'm inviting you to watch this space and explore my code through Github!</p>
-            <p>I have been a web development hobbyist since 2011 and I have worked with mainly PHP/MySQL and Javascript (specifically Node and Express) as well as MongoDB.</p>
+            <p>I have been a web development hobbyist since <span style={{textDecoration: 'line-through'}}>2011</span> <strong>correction: 2003</strong> (I can't count) and I have worked with mainly PHP/MySQL and Javascript (specifically Node and Express) as well as MongoDB.</p>
             <p>My aim with this project is to completely code a personal blog including the content management system and to flesh it out during my time with Lambda School to bring it up to professional standards. I will be keeping the To-Do List below updated and once the project is completed, I will publish a tutorial series on my new blog.</p>
             <p>Feel free to click on the Cog Icon below on the footer to view the Admin Panel. For showcase purposes I will allow people to view public information available on the admin panel.</p>
             <h3>Blog UI</h3>
             <ul style={{listStyleType: 'none'}}>
             <li>
-                <input type="checkbox" checked readOnly="true" /> Initial Layout
+                <input type="checkbox" checked readOnly={true} /> Initial Layout
               </li>
               <li>
-                <input type="checkbox" readOnly="true" /> Link Styles
+                <input type="checkbox" readOnly={true} /> Link Styles
               </li>
             </ul>
             <h3>Admin UI</h3>
             <ul style={{listStyleType: 'none'}}>
               <li>
-                <input type="checkbox" readOnly="true" /> Initial Layout
+                <input type="checkbox" readOnly={true} /> Initial Layout
               </li>
             </ul>
             <h3>Express API</h3>
