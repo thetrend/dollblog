@@ -6,7 +6,104 @@
 /** Admin UI Theme **/
 
 body.admin-ui {
-  background: red;
+  form > * { background: #1E003B; }
+  a {
+    color: #1e003b;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  background-image: url('./img/admin/oriental-tiles.png');
+  background-position: top left;
+  background-repeat: repeat;
+  font-size: larger;
+  @media only screen and (min-width: 481px) {
+    background-size: 30%;
+  }
+  color: #fbfbff;
+  margin: 0 5%;
+  font-family: 'Open Sans', sans-serif;
+  #{headings(1,6)} {
+    font-family: inherit;
+  }
+  div#admin-ui-container {
+    margin-top: 20px;
+    @media only screen and (max-width: 480px) {
+      padding: 8% 10%;
+      flex-direction: column;
+      margin-bottom: 3vh;
+    }
+    min-height: 80vh;
+    flex-direction: row;
+    padding-bottom: 4%;
+    display: flex;
+    main {
+      background: #0B0014;
+      @media only screen and (min-width: 480px) {
+        order: 2;
+        width: 58%;
+        margin: 0 1.5%;
+        padding: 1% 1.5%;
+        max-height: 80vh;
+        overflow: auto;
+      }
+      width: calc(100% - 40px);
+      padding: 10px 20px;
+      order: 2;
+      margin-bottom: 20px;
+    }
+    aside {
+      @media only screen and (min-width: 480px) {
+        order: 2;
+        width: 30%;
+      }
+      width: 100%;
+      order: 2;
+      ul {
+        padding-inline-start: 0;
+        list-style-type: none;
+        li {
+          color: black;
+          background: white;
+          margin-bottom: 3px;
+          padding-left: 4px;
+        }
+      }
+    }
+  }
+  footer#control-panel {
+    position: fixed;
+    left: 20px;
+    bottom: 0;
+    text-align: left;
+    width: 100%;
+    ul {
+      list-style-type: none;
+      padding-inline-start: 0;
+      li {
+        display: inline-block;
+        margin: 2px 4px;
+        font-size: 80%;
+        @media only screen and (min-width: 481px) {
+          font-size: 120%;
+        } 
+        svg {
+          background: #050046;
+          color: white;
+          border: 1px solid #050046;
+          border-radius: 5px;
+          padding: 10px;
+          box-shadow: 1px 1px white;
+        }
+        svg:hover {
+          background: #05008a;
+          border-color: #05008a;
+        }
+      }
+    }
+  }
 }
 
 /** Blog UI Theme **/
@@ -18,7 +115,7 @@ body.blog-ui {
   background-size: 100%;
   padding: 6%;
   padding-top: 0%;
-  @media screen and (min-width: 64em) {
+  @media only screen and (min-width: 480px) {
     background-image: url('./img/frenzy.png'), url('./img/background.jpeg');
     background-size: 50%, 20%;
     background-repeat: no-repeat, repeat;
@@ -29,9 +126,21 @@ body.blog-ui {
     background-attachment: fixed, scroll;
     font-size: large;
   }
-  @media screen and (max-width: 64em) {
+  @media only screen and (max-width: 480px) {
     margin: 0;
     padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #940088;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+
+  a:hover, a:active {
+    margin-bottom: 0;
+    border-bottom: 2px solid;
   }
 
   hr {
@@ -49,7 +158,7 @@ body.blog-ui {
       text-shadow: 1px 1px black, 2px 2px #FF00E9;
       display: inline-block;
       border-bottom: 24px solid black;
-      @media only screen and (max-width: 64em) {
+      @media only screen and (max-width: 480px) {
         font-size: 300%;
         line-height: 90%;
         padding: 8% 3% 6% 3%;
@@ -61,7 +170,7 @@ body.blog-ui {
   }
   
   div#backdrop {
-    @media only screen and (max-width: 64em) {
+    @media only screen and (max-width: 480px) {
       background-image: url('./img/frenzy.png');
       background-position: top center;
       background-size: 98%;
@@ -70,12 +179,12 @@ body.blog-ui {
       min-height: 150px;
       padding: 8% 10%;
       flex-direction: column;
-      }
+    }
     flex-direction: row;
     padding-bottom: 4%;
     display: flex;
     main {
-      @media only screen and (min-width: 64em) {
+      @media only screen and (min-width: 480px) {
         order: 2;
         width: 58%;
         margin: 0 3%;
@@ -103,7 +212,6 @@ body.blog-ui {
           text-transform: uppercase;
           margin: 0;
         }
-        ul, ol {}
       }
     }
     aside {
@@ -116,7 +224,7 @@ body.blog-ui {
           align-content: left;
           img {
             width: 90%;
-            @media only screen and (min-width: 64em) {
+            @media only screen and (min-width: 480px) {
               width: 85%;
             }
             border-radius: 50%;
@@ -148,7 +256,7 @@ body.blog-ui {
           }
         }  
       }
-      @media only screen and (min-width: 64em) {
+      @media only screen and (min-width: 480px) {
         order: 2;
         width: 30%;
         hr {
