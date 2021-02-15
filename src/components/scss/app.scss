@@ -6,7 +6,19 @@
 /** Admin UI Theme **/
 
 body.admin-ui {
-  form > * { background: #1E003B; }
+  form {
+    text-align: center;
+    > * {
+      background: #1E003B;
+      color: white;
+      border: 1px solid rgb(255, 196, 0);
+      border-radius: 5px;
+      outline: none;
+      padding: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
   a {
     color: #1e003b;
     font-weight: bold;
@@ -42,7 +54,7 @@ body.admin-ui {
     main {
       background: #0B0014;
       @media only screen and (min-width: 480px) {
-        order: 2;
+        order: 1;
         width: 58%;
         margin: 0 1.5%;
         padding: 1% 1.5%;
@@ -53,6 +65,7 @@ body.admin-ui {
       padding: 10px 20px;
       order: 2;
       margin-bottom: 20px;
+      min-height: 64vh;
     }
     aside {
       @media only screen and (min-width: 480px) {
@@ -60,13 +73,13 @@ body.admin-ui {
         width: 30%;
       }
       width: 100%;
-      order: 2;
+      order: 1;
       ul {
         padding-inline-start: 0;
         list-style-type: none;
         li {
           color: black;
-          background: white;
+          background: rgb(255, 196, 0);
           margin-bottom: 3px;
           padding-left: 4px;
         }

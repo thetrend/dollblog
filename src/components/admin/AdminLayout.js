@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faShieldAlt, faPlay, faThList, faPencilAlt, faCogs } from '@fortawesome/free-solid-svg-icons';
 
+import Login from './Login';
+
 library.add([faShieldAlt, faPlay, faThList, faCogs, faPencilAlt]);
 
 const AdminLayout = () => {
@@ -19,7 +21,7 @@ const AdminLayout = () => {
     <Fragment>
       <div id="admin-ui-container">
         <main>
-          <Repeat />
+          <Login />
         </main>
         <aside>
           <ul>
